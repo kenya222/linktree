@@ -1,0 +1,74 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xyinnn Store</title>
+  <style>
+    :root{
+      --pink:#ff6ec4;
+      --purple:#7873f5;
+      --green:#25D366;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#fff}
+    body{
+      /* GRADIENT ANIMATED BACKGROUND */
+      background:linear-gradient(-45deg,#0f0c29,#302b63,#24243e,var(--purple));
+      background-size:400% 400%;
+      animation:bgFlow 15s ease infinite;
+      display:flex;align-items:center;justify-content:center;
+    }
+    @keyframes bgFlow{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    .card{
+      background:rgba(0,0,0,.35);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:24px;
+      padding:45px 35px;
+      width:100%;
+      max-width:360px;
+      text-align:center;
+      box-shadow:0 12px 40px rgba(0,0,0,.5)
+    }
+    .avatar{
+      width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--pink);margin-bottom:15px}
+    h1{font-size:26px;margin-bottom:5px;letter-spacing:.5px}
+    p{font-size:14px;color:#ccc;margin-bottom:30px}
+
+    .btn{
+      display:block;
+      margin-bottom:14px;
+      padding:14px 0;
+      border-radius:50px;
+      font-weight:600;
+      font-size:15px;
+      text-decoration:none;
+      transition:.3s
+    }
+    .wa{background:var(--green);color:#fff}
+    .wa:hover{opacity:.85;transform:translateY(-2px)}
+    .saweria{background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff}
+    .saweria:hover{opacity:.85;transform:translateY(-2px)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="avatar" src="https://imgur.com/a/WQmzQDn" alt="Xyinnn"/>
+    <h1>Xyinnn Store</h1>
+    <p>Official link & support</p>
+
+    <a class="btn wa" href="https://chat.whatsapp.com/Dx3o4D42k64CQ9uWEZUUT5?mode=ac_t" target="_blank" rel="noopener">
+      💬 Gabung Grup WhatsApp
+    </a>
+
+    <a class="btn saweria" href="https://sociabuzz.com/xyinnnstore" target="_blank" rel="noopener">
+      ☕ Trakteer di Saweria
+    </a>
+  </div>
+</body>
+</html>
